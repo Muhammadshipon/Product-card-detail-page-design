@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -9,13 +9,13 @@ import 'swiper/css/pagination';
 
 import '../App.css';
 // import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
+import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
 
 
 const RelatedProducts = () => {
   return (
     <>
-      <h3 className='text-center font-bold text-3xl mb-8 mt-14'>Related products</h3>
+      <h3 className='text-center font-bold text-3xl mb-8 '>Related products</h3>
     <Swiper
       slidesPerView={4.5}
       spaceBetween={30}
@@ -23,7 +23,11 @@ const RelatedProducts = () => {
       pagination={{
         clickable: true,
       }}
-      modules={[FreeMode, Pagination]}
+      autoplay={{
+        delay: 1000,
+        disableOnInteraction: false,
+      }}
+      modules={[FreeMode, Pagination, Autoplay]}
       className="mySwiper mb-10 pb-10"
       breakpoints={{
         // Small screens (e.g., mobile devices)

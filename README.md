@@ -1,4 +1,5 @@
-# React + Vite
+### lIVE lINK: https://poetic-queijadas-3dc8d1.netlify.app/
+# Product Detail Page
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
