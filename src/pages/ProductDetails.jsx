@@ -1,6 +1,7 @@
 import { FaMinus, FaPlus } from "react-icons/fa";
 import Rating from "../components/Rating";
 import Description from "../components/Description";
+import RelatedProducts from "../components/RelatedProducts";
 
 
 
@@ -29,7 +30,7 @@ const ProductDetails = () => {
       </div>
             {/* display image  */}
      <div className="lg:w-3/4 border  border-yellow-500 w-full top-0 sticky">
-        <img src="/public/images/sony4.png" alt="tv" className="w-full lg:h-[600px]" />
+        <img src="/public/images/sony2.png" alt="tv" className="w-full  lg:h-[600px]" />
       </div>       
       </div> 
           {/* product info section    */}
@@ -81,7 +82,10 @@ const ProductDetails = () => {
       </section>                 
    
                            {/* description section   */}       
-           <Description/>          
+           <Description/>         
+
+                  {/* related products   */}
+        <RelatedProducts/>          
     </div>
   );
 };
